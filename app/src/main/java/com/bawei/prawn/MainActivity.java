@@ -1,5 +1,6 @@
 package com.bawei.prawn;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -8,6 +9,7 @@ import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bawei.common.front.StatusBarUtils;
 import com.bawei.module_discover.DiscoverFragment;
 import com.bawei.module_home.HomeFragment;
 import com.bawei.module_publish.PublishFragment;
@@ -28,6 +30,9 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //设置白底黑字
+        StatusBarUtils.setStatusBarColor(this, Color.WHITE);
+        StatusBarUtils.setAndroidNativeLightStatusBar(this,true);
         initView();
         initSelect();
     }
