@@ -39,6 +39,7 @@ dependencies {
     implementation project(path: ':mudule_my')
     implementation project(path: ':module_publish')
     implementation project(path: ':library_common')
+    implementation project(path: ':library_resource')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

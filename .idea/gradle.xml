@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/library_common" />
             <option value="$PROJECT_DIR$/library_mvvm" />
+            <option value="$PROJECT_DIR$/library_resource" />
             <option value="$PROJECT_DIR$/module_discover" />
             <option value="$PROJECT_DIR$/module_home" />
             <option value="$PROJECT_DIR$/module_publish" />
