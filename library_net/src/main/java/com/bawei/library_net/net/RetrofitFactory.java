@@ -1,12 +1,12 @@
-package com.bawei.library_common.net;
+package com.bawei.library_net.net;
 
 import android.text.TextUtils;
 import android.util.Log;
 
 
-import com.bawei.library_common.Bean.TokenRespEntity;
-import com.bawei.library_common.api.TokenApi;
-import com.bawei.library_common.common.NetConfig;
+import com.bawei.library_net.Bean.TokenRespEntity;
+import com.bawei.library_net.api.TokenApi;
+import com.bawei.library_net.common.NetConfig;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

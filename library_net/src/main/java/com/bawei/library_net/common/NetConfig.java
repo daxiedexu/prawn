@@ -1,4 +1,4 @@
-package com.bawei.library_common.common;
+package com.bawei.library_net.common;
 
 /**
  * @ClassName NetConfig

@@ -1,7 +1,7 @@
-package com.bawei.library_common.api;
+package com.bawei.library_net.api;
 
 
-import com.bawei.library_common.Bean.TokenRespEntity;
+import com.bawei.library_net.Bean.TokenRespEntity;
 
 import retrofit2.Call;
 import retrofit2.http.Field;

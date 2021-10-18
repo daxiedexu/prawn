@@ -1,4 +1,4 @@
-package com.bawei.library_common.Bean;
+package com.bawei.library_net.Bean;
 
 /**
  * @ClassName RetrofitFactory
