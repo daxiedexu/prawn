@@ -9,7 +9,7 @@ import android.widget.RadioGroup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bawei.common.front.StatusBarUtils;
+import com.bawei.library_common.front.StatusBarUtils;
 import com.bawei.module_discover.DiscoverFragment;
 import com.bawei.module_home.HomeFragment;
 import com.bawei.module_publish.PublishFragment;

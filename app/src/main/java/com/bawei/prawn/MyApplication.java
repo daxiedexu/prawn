@@ -4,7 +4,8 @@ import android.app.Application;
 import android.os.Process;
 import android.text.TextUtils;
 
-import com.bawei.common.back.ProgressManger;
+
+import com.bawei.library_common.back.ProgressManger;
 import com.eachann.launch.starter.TaskDispatcher;
 
 import java.util.concurrent.ExecutorService;

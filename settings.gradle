@@ -1,9 +1,9 @@
 rootProject.name = "prawn"
 include ':app'
-include ':common'
 include ':module_sofa'
 include ':module_home'
 include ':module_discover'
 include ':mudule_my'
 include ':module_publish'
-include ':mvvm_core'
+include ':library_common'
+include ':library_mvvm'

@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import com.bawei.common.front.StatusBarUtils;
+import com.bawei.library_common.front.StatusBarUtils;
+
 
 public class SplashActivity extends AppCompatActivity {
 
