@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/module_publish" />
             <option value="$PROJECT_DIR$/module_sofa" />
             <option value="$PROJECT_DIR$/mudule_my" />
+            <option value="$PROJECT_DIR$/mvvm_core" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

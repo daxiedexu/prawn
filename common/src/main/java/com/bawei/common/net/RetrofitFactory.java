@@ -44,7 +44,7 @@ public class RetrofitFactory {
 
     private Retrofit createRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl(BuildConfig.BASEURL)
+                .baseUrl("")
                 .client(createOkHttpClient())
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
