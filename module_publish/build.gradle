@@ -55,6 +55,7 @@ dependencies {
     implementation project(path: ':library_resource')
     implementation project(path: ':library_common')
     implementation project(path: ':library_mvvm')
+    implementation project(path: ':library_net')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
