@@ -46,4 +46,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //LaunchStarter用来在Application初始化耗时操作
     implementation 'com.gitee.eachann_lee:LaunchStarter:1.0.0'
+    //广告
+    implementation 'com.aliyun.ams:alicloud-android-cloudcode:1.0.5'
 }

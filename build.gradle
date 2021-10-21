@@ -4,6 +4,10 @@ buildscript {
         google()
         mavenCentral()
         maven { url 'https://jitpack.io' }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+            name 'aliyun'
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"
@@ -19,6 +23,9 @@ allprojects {
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
         maven { url 'https://jitpack.io' }
+        maven {
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
     }
 }
 
