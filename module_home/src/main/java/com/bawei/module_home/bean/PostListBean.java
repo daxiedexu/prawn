@@ -16,12 +16,12 @@ public class PostListBean {
     /**
      * status : 200
      * message : 成功
-     * data : {"data":[{"id":1578922430,"itemId":1615197740457,"itemType":2,"createTime":1615197740457,"duration":0,"feeds_text":"你见过的最虚荣的女生是什么样的?","authorId":1578919786,"activityIcon":null,"activityText":"放松时刻","width":1280,"height":720,"url":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.mp4","cover":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.jpeg","author":{"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":3,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":764,"favoriteCount":25,"feedCount":10,"hasFollow":false},"topComment":null,"ugc":{"likeCount":9824,"shareCount":146,"commentCount":10046,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}},{"id":424,"itemId":1578921430555,"itemType":2,"createTime":1578977844501,"duration":30,"feeds_text":"感受下冬季的魔术吧","authorId":1578919786,"activityIcon":null,"activityText":"2019高光时刻","width":640,"height":360,"url":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/%E5%86%AC%E5%AD%A3%E7%9A%84%E9%AD%94%E6%9C%AFvideo.mp4","cover":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/%E5%86%AC%E5%AD%A3%E7%9A%84%E5%A5%A5%E7%A7%98.png","author":{"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":3,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":764,"favoriteCount":25,"feedCount":10,"hasFollow":false},"topComment":null,"ugc":{"likeCount":1954,"shareCount":34,"commentCount":548,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}}]}
+     * data : {"data":[{"id":1578922430,"itemId":1615197740457,"itemType":2,"createTime":1615197740457,"duration":0,"feeds_text":"你见过的最虚荣的女生是什么样的?","authorId":1578919786,"activityIcon":null,"activityText":"放松时刻","width":1280,"height":720,"url":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.mp4","cover":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.jpeg","author":{"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":4,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":766,"favoriteCount":25,"feedCount":10,"hasFollow":false},"topComment":null,"ugc":{"likeCount":9824,"shareCount":147,"commentCount":10048,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}},{"id":424,"itemId":1578921430555,"itemType":2,"createTime":1578977844501,"duration":30,"feeds_text":"感受下冬季的魔术吧","authorId":1578919786,"activityIcon":null,"activityText":"2019高光时刻","width":640,"height":360,"url":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/%E5%86%AC%E5%AD%A3%E7%9A%84%E9%AD%94%E6%9C%AFvideo.mp4","cover":"https://pipijoke.oss-cn-hangzhou.aliyuncs.com/%E5%86%AC%E5%AD%A3%E7%9A%84%E5%A5%A5%E7%A7%98.png","author":{"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":4,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":766,"favoriteCount":25,"feedCount":10,"hasFollow":false},"topComment":null,"ugc":{"likeCount":1954,"shareCount":34,"commentCount":548,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}}]}
      */
 
     private int status;
     private String message;
-    private DataBeanEntity data;
+    private PostDataBean postDataBean;
 
     public int getStatus() {
         return status;
@@ -39,15 +39,15 @@ public class PostListBean {
         this.message = message;
     }
 
-    public DataBeanEntity getData() {
-        return data;
+    public PostDataBean getPostDataBean() {
+        return postDataBean;
     }
 
-    public void setData(DataBeanEntity data) {
-        this.data = data;
+    public void setPostDataBean(PostDataBean postDataBean) {
+        this.postDataBean = postDataBean;
     }
 
-    public static class DataBeanEntity {
+    public static class PostDataBean {
         /**
          * id : 1578922430
          * itemId : 1615197740457
@@ -62,9 +62,9 @@ public class PostListBean {
          * height : 720
          * url : https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.mp4
          * cover : https://pipijoke.oss-cn-hangzhou.aliyuncs.com/car.jpeg
-         * author : {"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":3,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":764,"favoriteCount":25,"feedCount":10,"hasFollow":false}
+         * author : {"id":1755,"userId":1578919786,"name":"、蓅哖╰伊人为谁笑","avatar":"http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100","description":"小朋友,你是否有很多问号","likeCount":4,"topCommentCount":10,"followCount":126,"followerCount":105,"qqOpenId":"FE41683AD4ECF91B7736CA9DB8104A5C","expires_time":1596726031266,"score":1000,"historyCount":4056,"commentCount":766,"favoriteCount":25,"feedCount":10,"hasFollow":false}
          * topComment : null
-         * ugc : {"likeCount":9824,"shareCount":146,"commentCount":10046,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}
+         * ugc : {"likeCount":9824,"shareCount":147,"commentCount":10048,"hasFavorite":false,"hasLiked":false,"hasdiss":false,"hasDissed":false}
          */
 
         private List<DataBean> data;
@@ -97,7 +97,7 @@ public class PostListBean {
              * name : 、蓅哖╰伊人为谁笑
              * avatar : http://qzapp.qlogo.cn/qzapp/101794421/FE41683AD4ECF91B7736CA9DB8104A5C/100
              * description : 小朋友,你是否有很多问号
-             * likeCount : 3
+             * likeCount : 4
              * topCommentCount : 10
              * followCount : 126
              * followerCount : 105
@@ -105,7 +105,7 @@ public class PostListBean {
              * expires_time : 1596726031266
              * score : 1000
              * historyCount : 4056
-             * commentCount : 764
+             * commentCount : 766
              * favoriteCount : 25
              * feedCount : 10
              * hasFollow : false
@@ -115,8 +115,8 @@ public class PostListBean {
             private Object topComment;
             /**
              * likeCount : 9824
-             * shareCount : 146
-             * commentCount : 10046
+             * shareCount : 147
+             * commentCount : 10048
              * hasFavorite : false
              * hasLiked : false
              * hasdiss : false

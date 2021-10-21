@@ -8,13 +8,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    <LinearLayout
-        android:id="@+id/act_main_ll"
-        android:orientation="vertical"
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/act_main_vp"
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0dp">
-    </LinearLayout>
+    </androidx.viewpager.widget.ViewPager>
     <RadioGroup
         android:id="@+id/act_main_radio"
         android:layout_gravity="center"

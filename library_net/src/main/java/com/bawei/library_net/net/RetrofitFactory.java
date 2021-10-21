@@ -7,6 +7,8 @@ import android.util.Log;
 import com.bawei.library_net.Bean.TokenRespEntity;
 import com.bawei.library_net.api.TokenApi;
 import com.bawei.library_net.common.NetConfig;
+import com.bawei.library_net.gson.CustomGsonConverterFactory;
+import com.bawei.library_net.rxjava.LiveDataCallAdapterFactory;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -45,10 +47,11 @@ public class RetrofitFactory {
 
     private Retrofit createRetrofit() {
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("")
+                .baseUrl("http://123.56.232.18:8080/serverdemo/")
                 .client(createOkHttpClient())
+                .addCallAdapterFactory(LiveDataCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
-                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
+                .addConverterFactory(CustomGsonConverterFactory.create())
                 .build();
         return retrofit;
     }
@@ -67,7 +70,6 @@ public class RetrofitFactory {
                 .connectTimeout(NetConfig.TIMEOUT, TimeUnit.MINUTES)
                 .retryOnConnectionFailure(true)//默认重试一次，若需要重试N次，则要实现拦截器。
                 .build( );
-
         return build;
     }
 
