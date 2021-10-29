@@ -7,11 +7,9 @@ import com.blankj.utilcode.util.Utils;
 /**
  * @ClassName SharedManger
  * @Description TODO
- * @Author 张海旭
  * @Date 2021/9/13 19:35
  * @Version 1.0
  * Created by Android Studio.
- * User: 张海旭
  */
 public class SharedPreferencesUtils {
     private SharedPreferences sharedPreferences;

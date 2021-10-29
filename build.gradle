@@ -5,8 +5,7 @@ buildscript {
         mavenCentral()
         maven { url 'https://jitpack.io' }
         maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
-            name 'aliyun'
+            url 'https://artifact.bytedance.com/repository/pangle'
         }
     }
     dependencies {
@@ -24,7 +23,7 @@ allprojects {
         jcenter() // Warning: this repository is going to shut down soon
         maven { url 'https://jitpack.io' }
         maven {
-            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+            url 'https://artifact.bytedance.com/repository/pangle'
         }
     }
 }

@@ -7,11 +7,9 @@ import com.bawei.library_common.BuildConfig;
 /**
  * @ClassName LogUtils
  * @Description TODO
- * @Author 张海旭
  * @Date 2021/10/13 8:10
  * @Version 1.0
  * Created by Android Studio.
- * User: 张海旭
  */
 public class LogUtils {
     private static String className;

@@ -12,29 +12,37 @@
         android:theme="@style/Theme.Prawn"
         android:usesCleartextTraffic="true">
 
-        <meta-data
-            android:name="com.alibaba.sdk.android.cloudcode.channelId"
-            android:value="id=TEST_TENANT" /> <!-- 这里配置mediaId -->
-        <meta-data
-            android:name="com.alibaba.sdk.android.cloudcode.mediaId"
-            android:value="id=566388709907014657" />
-
         <activity android:name=".AdvActivity">
-
-        </activity>
-
-        <activity
-            android:name=".SplashActivity"
-            android:theme="@style/AppTheme.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.Splash">
+
+        </activity>
         <activity android:name=".MainActivity" />
+
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
 
 
     </application>
+
 
 </manifest>

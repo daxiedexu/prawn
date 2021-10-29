@@ -4,10 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
     tools:context=".AdvActivity">
-    <com.alibaba.sdk.android.cloudcode.SplashAdView
+    <FrameLayout
+        android:id="@+id/splash_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cloud_code_cc_slot_id="566938528140528642"
-        android:id="@+id/splashAdView" />
+        android:background="#000000"
+        >
+    </FrameLayout>
 </LinearLayout>

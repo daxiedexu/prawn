@@ -1,14 +1,14 @@
 package com.bawei.prawn;
 
 import android.app.Application;
+import android.content.Context;
 import android.os.Process;
 import android.text.TextUtils;
 
-
-import com.alibaba.sdk.android.cloudcode.CloudCodeInitializer;
-import com.alibaba.sdk.android.cloudcode.CloudCodeLog;
-import com.alibaba.sdk.android.logger.LogLevel;
 import com.bawei.library_common.back.ProgressManger;
+import com.bytedance.sdk.openadsdk.TTAdConfig;
+import com.bytedance.sdk.openadsdk.TTAdConstant;
+import com.bytedance.sdk.openadsdk.TTAdSdk;
 import com.eachann.launch.starter.TaskDispatcher;
 
 import java.util.concurrent.ExecutorService;
@@ -27,7 +27,7 @@ public class MyApplication extends Application {
     private static final int CPU_COUNT = Runtime.getRuntime().availableProcessors();
     private static final int CODE_POLL_SIZE = Math.max(2,Math.min(CPU_COUNT-1,4));
     private ExecutorService executorService;
-
+    Context context;
     /**
      * 这是第一种冷启动：（目前正在使用的方式）
      * 使用线程池进行耗时操作
@@ -42,16 +42,12 @@ public class MyApplication extends Application {
                 TaskDispatcher.init(MyApplication.this);//初始化启动器
             });
             executorService.shutdown();//关闭线程池
-            // 用户签署隐私协议之后，
-            // 注入用户设备OAID
-            CloudCodeInitializer.setOAID(null);
-            // 调用云码sdk初始化
-            CloudCodeInitializer.init(this);
-            // 如果没有在manifest中配置渠道ID和媒体ID，需要在此处传入
-            // CloudCodeInitializer.init(this, "使用渠道ID替换此处", "使用媒体ID替换此处");
-            // 设置日志输出级别为debug
-            CloudCodeLog.setLevel(LogLevel.DEBUG);
+            //穿山甲SDK初始化
+            //强烈建议在应用对应的Application#onCreate()方法中调用，避免出现content为null的异常
+
         }
+        context = this;
+        TTAdManagerHolder.init(this);
 
     }
 
